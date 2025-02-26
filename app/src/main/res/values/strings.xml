@@ -3,4 +3,21 @@
     <string name="ejercicio1">Ejercicio 1</string>
     <string name="ejercicio2">Ejercicio 2</string>
     <string name="ejercicio3">Ejercicio 3</string>
+
+    <string name="ejercicio1Titulo">Ejercicio 1, calculo de promedio de estudiante</string>
+    <string name="nombre">Nombre del estudiante: </string>
+    <string name="nota1">Nota 1: </string>
+    <string name="nota2">Nota 2: </string>
+    <string name="nota3">Nota 3: </string>
+    <string name="nota4">Nota 4: </string>
+    <string name="nota5">Nota 5: </string>
+    <string name="calcular">Calcular promedio</string>
+    <string name="resultado">Resultado</string>
+
+    <string name="ejercicio2Titulo">Ejercicio 2, descuentos al salario</string>
+    <string name="nombresalario">Nombre: </string>
+    <string name="salario">Salario: </string>
+    <string name="calcularSalario">Calcular descuentos </string>
+    <string name="respuestasalario">Resultado </string>
+
 </resources>

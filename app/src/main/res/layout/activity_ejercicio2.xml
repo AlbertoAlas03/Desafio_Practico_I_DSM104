@@ -5,13 +5,56 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ejercicio2Activity">
+    tools:context=".Ejercicio2Activity"
+    android:orientation="vertical">
+
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="pantalla2"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="110dp" />
+        android:text="@string/ejercicio2Titulo"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/nombresalario" />
+    <EditText
+        android:id="@+id/nombreSalrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/salario" />
+    <EditText
+        android:id="@+id/salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcularSalario"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/resultadoSalrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/respuestasalario"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
 </LinearLayout>
