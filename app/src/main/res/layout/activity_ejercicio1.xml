@@ -13,90 +13,103 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:text="@string/ejercicio1Titulo"
-        android:layout_margin="25dp"
+        android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="7dp"
         android:text="@string/nombre" />
+
     <EditText
         android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="7dp"
         android:text="@string/nota1" />
+
     <EditText
         android:id="@+id/nota1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="7dp"
         android:text="@string/nota2" />
+
     <EditText
         android:id="@+id/nota2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="7dp"
         android:text="@string/nota3" />
+
     <EditText
         android:id="@+id/nota3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nota4"
-        android:layout_margin="10dp"
-        />
+        android:layout_margin="7dp"
+        android:text="@string/nota4" />
+
     <EditText
         android:id="@+id/nota4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nota5"
-        android:layout_margin="10dp" />
+        android:layout_margin="7dp"
+        android:text="@string/nota5" />
+
     <EditText
         android:id="@+id/nota5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/btn_promedio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calcular"
         android:layout_margin="10dp"
-        />
+        android:text="@string/calcular" />
+
+
     <TextView
         android:id="@+id/resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/resultado"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textAlignment="center"/>

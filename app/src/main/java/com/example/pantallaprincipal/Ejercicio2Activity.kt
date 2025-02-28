@@ -33,7 +33,7 @@ class Ejercicio2Activity : AppCompatActivity() {
         button.setOnClickListener {
             val nom = nombre.text.toString()
             val sal = salario.text.toString().toDoubleOrNull()
-            if (nom == "" || sal == null || sal <= 0) {
+            if (nom.isEmpty() || sal == null || sal <= 0) {
                 Toast.makeText(
                     this,
                     "Error, debe completar todos los campos correctamente.",
@@ -42,24 +42,27 @@ class Ejercicio2Activity : AppCompatActivity() {
             } else {
                 val afp = (sal * 0.0725).redondear()
                 val isss = (sal * 0.03).redondear()
-                var renta = 0.toDouble()
-                //validar renta
-                if(sal <= 472){
-                    renta = 0.0
-                }else if (sal >= 472.01 || sal <= 895.24) {
-                    renta = (17.67 + (sal - 472.00) * 0.1).redondear()
-                } else if (sal >= 895.25 || sal <= 2038.10) {
-                    renta = (60.00 + (sal - 895.24) * 0.2).redondear()
-                } else if (sal >= 2038.11) {
-                    renta = (288.57 + (sal - 2038.10) * 0.3).redondear()
+                var renta = 0.0
+
+
+                when {
+                    sal <= 472.00 -> renta = 0.0
+                    sal > 472.00 && sal <= 895.24 -> renta = (17.67 + (sal - 472.00) * 0.1).redondear()
+                    sal > 895.24 && sal <= 2038.10 -> renta = (60.00 + (sal - 895.24) * 0.2).redondear()
+                    sal > 2038.10 -> renta = (288.57 + (sal - 2038.10) * 0.3).redondear()
                 }
+
                 val salarioNeto = (sal - renta - afp - isss).redondear()
-                resultadoSalario.text = "El salario de $nom es: $$sal \n" +
-                        "El AFP descontado es: $$afp \n" +
-                        "El ISSS descontado es: $$isss \n" +
-                        "La renta descontada es: $$renta \n" +
-                        "El salario neto es: $$salarioNeto \n"
+
+                resultadoSalario.text = """
+                    El salario de $nom es: $$sal
+                    El AFP descontado es: $$afp
+                    El ISSS descontado es: $$isss
+                    La renta descontada es: $$renta
+                    El salario neto es: $$salarioNeto
+                    """.trimIndent()
             }
+
         }
     }
 }
