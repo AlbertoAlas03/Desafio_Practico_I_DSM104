@@ -23,19 +23,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="75dp"
-        android:background="#E0E0E0"
         android:gravity="end"
         android:padding="20dp"
         android:text="0"
+        android:background="@color/design_default_color_on_primary"
+        android:textStyle="bold"
         android:textAlignment="textEnd"
         android:textSize="32sp" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/display"
-        android:layout_marginTop="0dp"
-        android:columnCount="4"
+        android:layout_below="@+id/display"
+        android:layout_margin="65dp"
+        android:layout_marginTop="70dp"
+        android:columnCount="3"
         android:rowCount="5">
 
         <Button
@@ -50,6 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:textSize="24sp" />
 
         <Button
@@ -60,25 +64,20 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/button_plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:textSize="24sp" />
-
-        <!-- Botones para el resto de números y operaciones -->
-        <Button
             android:id="@+id/button_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:textSize="24sp" />
 
+        <!-- Botones para el resto de números y operaciones -->
         <Button
             android:id="@+id/button_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:textSize="24sp" />
 
         <Button
@@ -86,13 +85,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button_minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
             android:textSize="24sp" />
 
         <Button
@@ -107,6 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:textSize="24sp" />
 
         <Button
@@ -114,13 +108,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button_multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
             android:textSize="24sp" />
 
         <Button
@@ -135,6 +122,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:textSize="24sp" />
 
         <Button
@@ -142,6 +131,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="="
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+
             android:textSize="24sp" />
 
         <Button
@@ -156,6 +169,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="^"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:textSize="24sp" />
 
         <Button
