@@ -28,7 +28,7 @@
         android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="0dp"
         android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:id="@+id/nota1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="0dp"
         android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         android:id="@+id/nota2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="0dp"
         android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
         android:id="@+id/nota3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="0dp"
         android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -73,7 +73,6 @@
         android:id="@+id/nota4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -84,7 +83,6 @@
         android:id="@+id/nota5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:textSize="20dp"/>
     <Button
         android:id="@+id/btn_promedio"
